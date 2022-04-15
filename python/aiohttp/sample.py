@@ -30,7 +30,7 @@ RESULT_MODE = 'fg-image-shadow'
 
 OPTIONS = {
     'demo': {
-        'url': f'https://demo.api4ai.cloud/img-bg-removal/v1/cars/results?mode={RESULT_MODE}',
+        'url': f'https://demo.api4ai.cloud/img-bg-removal/v1/cars/results?mode={RESULT_MODE}',  # noqa
         'headers': {'A4A-CLIENT-APP-ID': 'sample'}
     },
     'rapidapi': {
@@ -58,7 +58,7 @@ async def main():
                                 headers=OPTIONS[MODE]['headers']) as response:
             resp_json = await response.json()
 
-        img_b64 = resp_json['results'][0]['entities'][0]['image'].encode('utf8')
+        img_b64 = resp_json['results'][0]['entities'][0]['image'].encode('utf8')  # noqa
 
         path_to_image = os.path.join('result.png')
         with open(path_to_image, 'wb') as img:
