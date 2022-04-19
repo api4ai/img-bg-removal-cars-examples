@@ -44,5 +44,5 @@ that better meets your business requirements.
 
 📩 Email: hello@api4.ai
 🔗 Website: https://api4.ai
-🤖 Telegram demo bot: https://t.me/a4a_img_labelling_bot
-🔵 Our API at RapidAPI marketplace: https://rapidapi.com/api4ai-api4ai-default/api/general-classification1/details
+🤖 Telegram demo bot: https://t.me/a4a_cars_img_bg_removal_bot
+🔵 Our API at RapidAPI marketplace: https://rapidapi.com/api4ai-api4ai-default/api/cars-image-background-removal/details
