@@ -1,4 +1,7 @@
+#!/usr/bin/env python3
+
 """Example of using API4AI car image background removal."""
+
 import asyncio
 import base64
 import os
