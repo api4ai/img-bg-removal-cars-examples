@@ -398,6 +398,9 @@ dist
 .yarn/install-state.gz
 .pnp.*
 
+# Misc
+package-lock.json
+
 ### Node Patch ###
 # Serverless Webpack directories
 .webpack/
@@ -541,3 +544,6 @@ fabric.properties
 # .NET Core build folders
 bin/
 obj/
+
+### Result image.
+result.png
