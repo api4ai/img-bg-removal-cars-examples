@@ -3,7 +3,6 @@
 """Example of using API4AI car image background removal."""
 
 import base64
-import mimetypes
 import os
 import sys
 
@@ -54,12 +53,11 @@ if __name__ == '__main__':
             data={'url': image})
     else:
         # POST image as file.
-        mt = mimetypes.guess_type(image)[0]
         with open(image, 'rb') as image_file:
             response = requests.post(
                 OPTIONS[MODE]['url'],
                 headers=OPTIONS[MODE]['headers'],
-                files={'image': (os.path.basename(image), image_file, mt)}
+                files={'image': (os.path.basename(image), image_file)}
             )
 
     img_b64 = response.json()['results'][0]['entities'][0]['image'].encode('utf8')
