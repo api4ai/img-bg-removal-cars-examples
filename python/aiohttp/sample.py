@@ -46,7 +46,6 @@ async def main():
     """Entry point."""
     image = sys.argv[1] if len(sys.argv) > 1 else 'https://storage.googleapis.com/api4ai-static/samples/img-bg-removal-cars-1.jpg'
 
-    # response = None
     async with aiohttp.ClientSession() as session:
         if '://' in image:
             # Data from image URL.
