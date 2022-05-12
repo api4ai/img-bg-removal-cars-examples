@@ -73,6 +73,6 @@ byte[] imgBytes = Convert.FromBase64String(imgB64);
 using (FileStream fs = File.OpenWrite("result.png")) {
     fs.Write(imgBytes, 0, imgBytes.Length);
 }
-Console.WriteLine("[i] The 'result.png' image is saved to the current directory.");
+Console.WriteLine($"[i] The 'result.png' image is saved to the '{Directory.GetCurrentDirectory()}' directory.");
 
 return 0;
