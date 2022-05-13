@@ -16,13 +16,19 @@ MODE="demo"
 RAPIDAPI_KEY=""
 
 
+# Processing mode influences returned result. Supported values are:
+# - fg-image-shadow - Foreground image with shadow added.
+# - fg-image - Foreground image.
+# - fg-mask - Mask image.
+RESULT_MODE="fg-image-shadow"
+
 
 # Define URL and headers.
 if [[ "${MODE}" == "demo" ]]; then
-    URL="https://demo.api4ai.cloud/img-bg-removal/v1/cars/results?mode=fg-image-shadow"
+    URL="https://demo.api4ai.cloud/img-bg-removal/v1/cars/results?mode=${RESULT_MODE}"
     HEADERS="A4A-CLIENT-APP-ID: sample"  # optional header
 elif [[ "${MODE}" == "rapidapi" ]]; then
-    URL="https://cars-image-background-removal.p.rapidapi.com/v1/results?mode=fg-image-shadow"
+    URL="https://cars-image-background-removal.p.rapidapi.com/v1/results?mode=${RESULT_MODE}"
     HEADERS="X-RapidAPI-Key': ${RAPIDAPI_KEY}"
 else
     echo "Unsupported sample mode"
