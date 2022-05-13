@@ -545,5 +545,11 @@ fabric.properties
 bin/
 obj/
 
-### Result image.
+### Apple ###
+
+.DS_Store
+xcuserdata
+xcshareddata
+
+### Result image ###
 result.png
