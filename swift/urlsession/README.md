@@ -1,7 +1,7 @@
 # API4AI car image background removal
 
 This directory contains a minimalistic sample that sends requests to the API4AI Car Image Background Removal API.
-The sample is implemented in `bash` using `curl` command-line tool.
+The sample is implemented in `Swift` using [URLSession](https://developer.apple.com/documentation/foundation/urlsession) class.
 
 
 ## Overview
