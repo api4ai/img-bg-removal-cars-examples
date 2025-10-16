@@ -51,7 +51,7 @@ switch (MODE) {
 }
 
 // Prepare request.
-String image = args.Length > 0 ? args[0] : "https://storage.googleapis.com/api4ai-static/samples/img-bg-removal-cars-1.jpg";
+String image = args.Length > 0 ? args[0] : "https://static.api4.ai/samples/img-bg-removal-cars-1.jpg";
 var client = new RestClient(new RestClientOptions(url) { ThrowOnAnyError = true });
 var request = new RestRequest();
 if (image.Contains("://")) {
