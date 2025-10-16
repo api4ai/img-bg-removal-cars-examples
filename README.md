@@ -55,7 +55,8 @@ This project run to help API users with ready-to-use examples in a set of the mo
 
 ## 🔗 Links
 
-* Learn more about API on [api4.ai](https://api4.ai/docs/car-bg-removal?utm_source=img_bg_removal_cars_example_repo&utm_medium=readme&utm_campaign=examples)
+* Sign up at [API4AI Developer Portal](https://portal.api4.ai)
+* Learn more about API at [api4.ai](https://api4.ai/docs/car-bg-removal?utm_source=img_bg_removal_cars_example_repo&utm_medium=readme&utm_campaign=examples)
 * Try API via [🤖 telegram demo bot](https://t.me/a4a_cars_img_bg_removal_bot)
 * View API on [RapidAPI marketplace](https://rapidapi.com/api4ai-api4ai-default/api/cars-image-background-removal/details)
 
