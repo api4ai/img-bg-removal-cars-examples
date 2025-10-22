@@ -1,7 +1,7 @@
 # API4AI Samples: Cars Image Background Removal
 
 <div align="center">
-<a target="_blank" href="https://api4.ai"><img src="https://static.api4.ai/logo/a4a-logo-horizontal-gradient-rectangular-bg-round-glow-small-550.png"/></a>
+<a target="_blank" href="https://api4.ai?utm_source=example-repo&utm_medium=referral&utm_campaign=car-bg-removal"><img src="https://static.api4.ai/logo/a4a-logo-horizontal-gradient-rectangular-bg-round-glow-small-550.png"/></a>
 </div>
 
 
@@ -55,7 +55,7 @@ This project run to help API users with ready-to-use examples in a set of the mo
 
 ## 🔗 Links
 
-* Sign up at [API4AI Developer Portal](https://portal.api4.ai)
+* Sign up at [API4AI Developer Portal](https://portal.api4.ai?utm_source=example-repo&utm_medium=referral&utm_campaign=car-bg-removal)
 * Learn more about API at [api4.ai](https://api4.ai/docs/car-bg-removal)
 * Try API via [🤖 telegram demo bot](https://t.me/a4a_cars_img_bg_removal_bot)
 * View API on [RapidAPI marketplace](https://rapidapi.com/api4ai-api4ai-default/api/cars-image-background-removal/details)
