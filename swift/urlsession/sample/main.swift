@@ -98,8 +98,8 @@ let dataTask = session.dataTask(with: request, completionHandler: { (data, respo
             let status = result["status"] as! [String:String]
             if (status["code"] == "ok") {
                 // Parse data.
-                let entity = (result["entities"] as! [[String:String]])[0]
-                let imageAsBase64 = entity["image"]!
+                let entity = (result["entities"] as! [[String:Any]])[0]
+                let imageAsBase64 = entity["image"] as! String
                 let imageAsData = NSData(base64Encoded: imageAsBase64)!
 
                 // Store data to file in current directory.
