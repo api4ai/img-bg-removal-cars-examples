@@ -15,14 +15,18 @@ extension NSMutableData {
 }
 
 
-// Use "demo" mode just to try api4ai for free. Free demo is rate limited.
-// For more details visit:
-//   https://api4.ai
+// Use "demo" mode just to try api4ai for free. ⚠️ Free demo is rate limited and must not be used in real projects.
+//
+// Use 'normal' mode if you have an API Key from the API4AI Developer Portal. This is the method that users should normally prefer.
 //
 // Use "rapidapi" if you want to try api4ai via RapidAPI marketplace.
 // For more details visit:
 //   https://rapidapi.com/api4ai-api4ai-default/api/cars-image-background-removal/details
 let MODE = "demo"
+
+
+// Your RapidAPI key. Fill this variable with the proper value if you have one.
+let API4AI_KEY = ""
 
 
 // Your RapidAPI key. Fill this variable with the proper value if you want
@@ -40,15 +44,15 @@ let RESULT_MODE = "fg-image-shadow"
 let OPTIONS = [
     "demo": [
         "url": "https://demo.api4ai.cloud/img-bg-removal/v1/cars/results?mode=\(RESULT_MODE)",
-        "headers": [
-            "A4A-CLIENT-APP-ID": "sample"
-        ] as NSMutableDictionary
+        "headers": [:] as NSMutableDictionary
+    ],
+    "normal": [
+        "url": "https://api4ai.cloud/img-bg-removal/v1/cars/results?mode=\(RESULT_MODE)",
+        "headers": ["X-API-KEY": API4AI_KEY] as NSMutableDictionary
     ],
     "rapidapi": [
         "url": "https://cars-image-background-removal.p.rapidapi.com/v1/results?mode=\(RESULT_MODE)",
-        "headers": [
-            "X-RapidAPI-Key": RAPIDAPI_KEY
-        ] as NSMutableDictionary
+        "headers": ["X-RapidAPI-Key": RAPIDAPI_KEY] as NSMutableDictionary
     ]
 ]
 
